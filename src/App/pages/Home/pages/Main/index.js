@@ -3,11 +3,11 @@ import React, { Component } from "react";
 import classnames from "classnames/bind";
 
 import css from "./index.scss";
+
 const cx = classnames.bind(css);
+const moduleName = "Main";
 
-const moduleName = "ExampleComponent";
-
-class ExampleComponent extends Component {
+class Main extends Component {
   constructor() {
     super();
     this.state = {};
@@ -16,10 +16,10 @@ class ExampleComponent extends Component {
   render() {
     return (
       <div className={cx(`${moduleName}`)}>
-        <p className={cx(`${moduleName}-content`)}>React start example page</p>
+        <p className={cx(`${moduleName}-content`)}>React start Main page</p>
       </div>
     );
   }
 }
 
-export default ExampleComponent;
+export default Main;

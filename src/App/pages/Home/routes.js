@@ -1,10 +1,10 @@
-import MainComponent from "./pages/MainComponent";
+import Main from "./pages/Main";
 import ExampleComponent from "./pages/ExampleComponent";
 const routes = [
   {
     path: "/",
     exact: true,
-    component: MainComponent
+    component: Main
   },
   {
     path: "/example",
