@@ -1,5 +1,7 @@
 import Main from "./pages/Main";
 import ExampleComponent from "./pages/ExampleComponent";
+import UseReduxComponent from "./pages/UseReduxComponent";
+
 const routes = [
   {
     path: "/",
@@ -10,6 +12,11 @@ const routes = [
     path: "/example",
     exact: true,
     component: ExampleComponent
+  },
+  {
+    path: "/useRedux",
+    exact: true,
+    component: UseReduxComponent
   }
 ];
 

@@ -1,9 +1,7 @@
-import {
-  SET_META,
-} from './actions';
+import { SET_META } from "./actions";
 
 const initState = {
-  meta: 'meta',
+  test: "test"
 };
 
 const meta = (state = initState, action) => {
@@ -11,7 +9,7 @@ const meta = (state = initState, action) => {
     case SET_META:
       return {
         ...state,
-        ...action.meta,
+        ...action.meta
       };
     default:
       return state;

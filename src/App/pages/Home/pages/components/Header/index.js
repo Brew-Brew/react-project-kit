@@ -11,8 +11,17 @@ class Header extends Component {
   render() {
     return (
       <div className={cx(`${moduleName}`)}>
-        <Link to="/">Main </Link>
-        <Link to="/example">example</Link>
+        <ul>
+          <li>
+            <Link to="/">Main</Link>
+          </li>
+          <li>
+            <Link to="/example">example</Link>
+          </li>
+          <li>
+            <Link to="/useRedux">useRedux</Link>
+          </li>
+        </ul>
       </div>
     );
   }

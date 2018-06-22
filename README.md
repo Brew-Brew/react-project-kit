@@ -13,4 +13,7 @@
 : 비동기 데이터 call이나, 데이터 flow 관리
 
 5.reacr-rotuer
+
+6.패키지 관리
+yarn
 ```
