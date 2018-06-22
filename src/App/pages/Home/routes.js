@@ -1,28 +1,16 @@
-import Reside from './pages/Reside';
-import Review from './pages/Review';
-import DetailInfo from './pages/DetailInfo';
-import SearchInfo from './pages/SearchInfo';
+import MainComponent from "./pages/MainComponent";
+import ExampleComponent from "./pages/ExampleComponent";
 const routes = [
   {
-    path: '/',
+    path: "/",
     exact: true,
-    component: Reside,
+    component: MainComponent
   },
   {
-    path: '/review',
+    path: "/example",
     exact: true,
-    component: Review,
-  },
-  {
-    path: '/searchDetail',
-    exact: true,
-    component: DetailInfo,
-  },
-  {
-    path: '/search',
-    exact: true,
-    component: SearchInfo,
-  },
+    component: ExampleComponent
+  }
 ];
 
 export default routes;
