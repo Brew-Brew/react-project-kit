@@ -1,7 +1,7 @@
 # 리액트 프로젝트 스타트킷
 
 ```
-Thansk to : https://github.com/zeakd
+Thanks to : https://github.com/zeakd
 ```
 
 ## WHY?
