@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import classnames from "classnames/bind";
 import { Switch, Route } from "react-router-dom";
 
-import Header from "./pages/components/Header";
+import Header from "./components/Header";
 import routes from "./routes";
 import css from "./index.scss";
 
