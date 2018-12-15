@@ -4,7 +4,7 @@ import classnames from "classnames/bind";
 import { compose } from "recompose";
 import { connect } from "react-redux";
 
-import { setMeta } from "src/redux/meta/actions";
+import { loadData } from "src/redux/data/actions";
 
 import css from "./index.scss";
 const cx = classnames.bind(css);
@@ -34,6 +34,6 @@ export default compose(
     ({ meta }) => ({
       meta
     }),
-    { setMeta }
+    { loadData }
   )
 )(UseReduxComponent);

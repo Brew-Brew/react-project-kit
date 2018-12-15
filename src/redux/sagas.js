@@ -1,9 +1,9 @@
-import { all, fork } from 'redux-saga/effects';
+import { all } from 'redux-saga/effects';
 
-import metaRoot from './meta/sagas';
+import  { watchData } from './data/sagas';
 
 export default function* root() {
   yield all([
-    metaRoot(),
+    watchData(),
   ]);
 }
