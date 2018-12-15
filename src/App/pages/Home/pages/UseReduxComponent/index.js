@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 import classnames from "classnames/bind";
 import { compose } from "recompose";
@@ -17,13 +17,30 @@ class UseReduxComponent extends Component {
     this.state = {};
   }
 
+  componentDidMount() {
+    const {loadData} = this.props;
+    loadData();
+  }
+  
+
   render() {
-    const { meta } = this.props;
+    const { data } = this.props;
+    const {datas: users, loading} = data;
     return (
       <div className={cx(`${moduleName}`)}>
-        <p className={cx(`${moduleName}-content`)}>
-          get data from redux: <strong>{meta.test}</strong>
-        </p>
+        <p>example with call api request with saga , and get data from redux state</p>
+        {loading? 
+          <div>...loading</div>
+         :
+        <Fragment>
+          {users.length > 0 && users.map((user)=>{
+            return(<div>
+              <img src={user.avatar} alt="" />
+              <p>{`${user.first_name} ${user.last_name}`}</p>
+            </div>)
+          })}
+        </Fragment>
+        }
       </div>
     );
   }
@@ -31,8 +48,8 @@ class UseReduxComponent extends Component {
 
 export default compose(
   connect(
-    ({ meta }) => ({
-      meta
+    ({ data }) => ({
+      data
     }),
     { loadData }
   )

@@ -19,10 +19,10 @@ export function loadDataRequest(params) {
   };
 }
 
-export function loadDataSuccess(menus) {
+export function loadDataSuccess(data) {
   return {
     type: LOAD_DATA_SUCCESS,
-    menus,
+    data,
   };
 }
 
